@@ -2,105 +2,130 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Menú - Pizzería Amigo Cheff</title>
+  <title>Menú - Amigo Cheff</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
       color: #000;
-      margin: 0;
+      margin: 0 auto;
       padding: 20px;
+      max-width: 800px;
     }
-    .logo {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .logo img {
-      max-width: 150px;
-      height: auto;
+    img.logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-height: 150px;
     }
     h1 {
       text-align: center;
-      margin-bottom: 40px;
-      text-transform: uppercase;
-      font-size: 28px;
-      border-bottom: 1px solid #000;
-      padding-bottom: 10px;
+      font-size: 48px;
+      margin-bottom: 10px;
     }
-    .categoria {
-      margin-top: 40px;
+    .subtitulo {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 30px;
     }
     .categoria h2 {
+      font-size: 24px;
       border-bottom: 1px solid #000;
       padding-bottom: 5px;
-      font-size: 22px;
+      margin-top: 30px;
     }
     .item {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 0;
-      border-bottom: 1px dotted #ccc;
+      margin: 10px 0;
     }
-    .precio {
+    .nombre {
       font-weight: bold;
+      text-transform: uppercase;
     }
-    footer {
-      text-align: center;
-      margin-top: 60px;
+    .descripcion {
       font-size: 14px;
-      color: #555;
+      color: #444;
+    }
+    .precios {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .precios h3 {
+      margin-bottom: 10px;
+    }
+    .precios table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    .precios th, .precios td {
+      border: 1px solid #000;
+      padding: 10px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
 
-  <div class="logo">
-    <!-- Reemplazá esta URL por la del logo de tu pizzería -->
-    <img src="logo.png" alt="Logo Pizzería Amigo Cheff">
-  </div>
+  <!-- Logo -->
+  <img src="logo.png" alt="Logo Amigo Cheff" class="logo">
 
-  <h1>Menú - Pizzería Amigo Cheff</h1>
+  <!-- Título -->
+  <h1>PIZZAS</h1>
+  <div class="subtitulo">Masa Artesanal</div>
 
+  <!-- Lista de Pizzas -->
   <div class="categoria">
-    <h2>Pizzas Clásicas</h2>
-    <div class="item"><span>Margarita</span><span class="precio">Gs. 25.000</span></div>
-    <div class="item"><span>Pepperoni</span><span class="precio">Gs. 28.000</span></div>
-    <div class="item"><span>Cuatro Quesos</span><span class="precio">Gs. 30.000</span></div>
-    <div class="item"><span>Napolitana</span><span class="precio">Gs. 27.000</span></div>
-    <div class="item"><span>Fugazzeta</span><span class="precio">Gs. 29.000</span></div>
-    <div class="item"><span>Vegetariana</span><span class="precio">Gs. 26.000</span></div>
-    <div class="item"><span>Hawaiana</span><span class="precio">Gs. 28.000</span></div>
-    <div class="item"><span>Calabresa</span><span class="precio">Gs. 30.000</span></div>
+    <h2>Menú</h2>
+    <div class="item">
+      <div class="nombre">1- Campestre</div>
+      <div class="descripcion">Masa casera, salsa, queso muzzarella, carne vacuna, champiñones.</div>
+    </div>
+    <div class="item">
+      <div class="nombre">2- Sardinas</div>
+      <div class="descripcion">Masa casera, salsa, queso muzzarella, sardinas, morrones.</div>
+    </div>
+    <div class="item">
+      <div class="nombre">3- Chiken</div>
+      <div class="descripcion">Masa casera, salsa, queso muzzarella, pollo salteado, queso katupry.</div>
+    </div>
+    <!-- Agregá más ítems como en la imagen... -->
   </div>
 
-  <div class="categoria">
-    <h2>Pizzas Especiales</h2>
-    <div class="item"><span>Don Queso Especial</span><span class="precio">Gs. 35.000</span></div>
-    <div class="item"><span>Carbonara</span><span class="precio">Gs. 33.000</span></div>
-    <div class="item"><span>Pollo y Champiñones</span><span class="precio">Gs. 32.000</span></div>
-    <div class="item"><span>Rúcula y Jamón Crudo</span><span class="precio">Gs. 34.000</span></div>
-    <div class="item"><span>Barbacoa</span><span class="precio">Gs. 36.000</span></div>
+  <!-- Tabla de Precios -->
+  <div class="precios">
+    <h3>Tamaños y Precios</h3>
+    <table>
+      <tr>
+        <th>Tamaño</th>
+        <th>Porciones</th>
+        <th>Precio</th>
+      </tr>
+      <tr>
+        <td>Michimi</td>
+        <td>4</td>
+        <td>Gs. 35.000</td>
+      </tr>
+      <tr>
+        <td>Tuicha</td>
+        <td>8</td>
+        <td>Gs. 65.000</td>
+      </tr>
+      <tr>
+        <td>Tuchaiterei</td>
+        <td>12</td>
+        <td>Gs. 90.000</td>
+      </tr>
+    </table>
+    <p><strong>Borde relleno + Gs. 10.000</strong></p>
+    <p><strong>Adicionales disponibles</strong></p>
   </div>
 
-  <div class="categoria">
-    <h2>Extras</h2>
-    <div class="item"><span>Mozzarella extra</span><span class="precio">Gs. 5.000</span></div>
-    <div class="item"><span>Borde relleno</span><span class="precio">Gs. 7.000</span></div>
-    <div class="item"><span>Salsa picante</span><span class="precio">Gs. 3.000</span></div>
+  <div class="footer">
+    ¡Gracias por elegir Amigo Cheff!
   </div>
-
-  <div class="categoria">
-    <h2>Bebidas</h2>
-    <div class="item"><span>Coca-Cola 500ml</span><span class="precio">Gs. 6.000</span></div>
-    <div class="item"><span>Agua sin gas</span><span class="precio">Gs. 4.000</span></div>
-    <div class="item"><span>Sprite 500ml</span><span class="precio">Gs. 6.000</span></div>
-    <div class="item"><span>Jugo natural</span><span class="precio">Gs. 8.000</span></div>
-  </div>
-
-  <footer>
-    ¡Gracias por elegirnos! 🍕 Amigo Cheff - Desde 1999
-  </footer>
 
 </body>
 </html>
-
