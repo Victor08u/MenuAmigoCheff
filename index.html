@@ -2,57 +2,105 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Menú - Pizzería Don Queso</title>
+  <title>Menú - Pizzería Amigo Cheff</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fff8f0;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #000;
       margin: 0;
       padding: 20px;
     }
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      max-width: 150px;
+      height: auto;
+    }
     h1 {
       text-align: center;
-      color: #b33c00;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      font-size: 28px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 10px;
     }
     .categoria {
-      margin-top: 30px;
+      margin-top: 40px;
+    }
+    .categoria h2 {
+      border-bottom: 1px solid #000;
+      padding-bottom: 5px;
+      font-size: 22px;
     }
     .item {
-      margin: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px dotted #ccc;
     }
     .precio {
-      float: right;
+      font-weight: bold;
     }
-    hr {
-      border: none;
-      border-top: 1px solid #ccc;
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 <body>
+
+  <div class="logo">
+    <!-- Reemplazá esta URL por la del logo de tu pizzería -->
+    <img src="https://via.placeholder.com/150x100?text=Logo" alt="Logo Pizzería Don Queso">
+  </div>
+
   <h1>Menú - Pizzería Don Queso</h1>
 
   <div class="categoria">
-    <h2>🍕 Pizzas Clásicas</h2>
-    <div class="item">Margarita <span class="precio">Gs. 25.000</span></div>
-    <div class="item">Pepperoni <span class="precio">Gs. 28.000</span></div>
-    <div class="item">Cuatro Quesos <span class="precio">Gs. 30.000</span></div>
+    <h2>Pizzas Clásicas</h2>
+    <div class="item"><span>Margarita</span><span class="precio">Gs. 25.000</span></div>
+    <div class="item"><span>Pepperoni</span><span class="precio">Gs. 28.000</span></div>
+    <div class="item"><span>Cuatro Quesos</span><span class="precio">Gs. 30.000</span></div>
+    <div class="item"><span>Napolitana</span><span class="precio">Gs. 27.000</span></div>
+    <div class="item"><span>Fugazzeta</span><span class="precio">Gs. 29.000</span></div>
+    <div class="item"><span>Vegetariana</span><span class="precio">Gs. 26.000</span></div>
+    <div class="item"><span>Hawaiana</span><span class="precio">Gs. 28.000</span></div>
+    <div class="item"><span>Calabresa</span><span class="precio">Gs. 30.000</span></div>
   </div>
 
   <div class="categoria">
-    <h2>🧀 Extras</h2>
-    <div class="item">Mozzarella extra <span class="precio">Gs. 5.000</span></div>
-    <div class="item">Borde relleno <span class="precio">Gs. 7.000</span></div>
+    <h2>Pizzas Especiales</h2>
+    <div class="item"><span>Don Queso Especial</span><span class="precio">Gs. 35.000</span></div>
+    <div class="item"><span>Carbonara</span><span class="precio">Gs. 33.000</span></div>
+    <div class="item"><span>Pollo y Champiñones</span><span class="precio">Gs. 32.000</span></div>
+    <div class="item"><span>Rúcula y Jamón Crudo</span><span class="precio">Gs. 34.000</span></div>
+    <div class="item"><span>Barbacoa</span><span class="precio">Gs. 36.000</span></div>
   </div>
 
   <div class="categoria">
-    <h2>🥤 Bebidas</h2>
-    <div class="item">Coca-Cola 500ml <span class="precio">Gs. 6.000</span></div>
-    <div class="item">Agua sin gas <span class="precio">Gs. 4.000</span></div>
+    <h2>Extras</h2>
+    <div class="item"><span>Mozzarella extra</span><span class="precio">Gs. 5.000</span></div>
+    <div class="item"><span>Borde relleno</span><span class="precio">Gs. 7.000</span></div>
+    <div class="item"><span>Salsa picante</span><span class="precio">Gs. 3.000</span></div>
   </div>
 
-  <hr>
-  <p style="text-align:center;">¡Gracias por visitarnos! 🍕</p>
+  <div class="categoria">
+    <h2>Bebidas</h2>
+    <div class="item"><span>Coca-Cola 500ml</span><span class="precio">Gs. 6.000</span></div>
+    <div class="item"><span>Agua sin gas</span><span class="precio">Gs. 4.000</span></div>
+    <div class="item"><span>Sprite 500ml</span><span class="precio">Gs. 6.000</span></div>
+    <div class="item"><span>Jugo natural</span><span class="precio">Gs. 8.000</span></div>
+  </div>
+
+  <footer>
+    ¡Gracias por elegirnos! 🍕 Don Queso - Desde 1999
+  </footer>
+
 </body>
 </html>
+
